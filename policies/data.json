@@ -1,0 +1,58 @@
+[
+    {
+        "effect": "Allow",
+        "principal": {
+            "role": [
+                "smurf",
+                "papa"
+            ],
+            "department": "forest"
+        },
+        "resources": [
+            {
+                "name": "mushrooms"
+            },
+            {
+                "name": "books"
+            }
+        ],
+        "action": [
+            "*"
+        ]
+    },
+    {
+        "effect": "Deny",
+        "notPrincipal": {
+            "role": [
+                "papa"
+            ],
+            "department": "forest"
+        },
+        "resources": [
+            {
+                "name": "mushrooms",
+                "color": "red"
+            }
+        ],
+        "action": [
+            "*"
+        ]
+    },
+    {
+        "effect": "Allow",
+        "role": "smurf",
+        "resources": [
+            "*"
+        ],
+        "action": [
+            "*"
+        ]
+    },
+    {
+        "role": "wizard",
+        "resources": [
+            "*"
+        ],
+        "action": []
+    }
+]
